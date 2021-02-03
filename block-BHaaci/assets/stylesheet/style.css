@@ -1,0 +1,187 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom Styling */
+
+/* General */
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  background: url(../media/bg-intro-desktop.png) center center no-repeat, linear-gradient(rgba(255, 121, 120, 1), rgba(234, 114, 115, 1));
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-45 {
+  flex: 0 1 45%;
+}
+
+h1 {
+  font-size: 44px;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 40px;
+}
+
+/* Main */
+
+main {
+  background: url(../media/bg-intro-desktop.png) center center no-repeat, linear-gradient(rgba(255, 121, 120, 1), rgba(234, 114, 115, 1));
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.trial p {
+  color: #FDFFFF;
+  font-size: 15px;
+}
+
+.ribbon {
+  padding: 12px 32px;
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #5D54A3;
+  font-size: 14px;
+  font-weight: 600;
+  color: #B3AED8;
+  border-radius: 8px;
+  box-shadow: 0 6px 0 rgb(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.ribbon a {
+  text-decoration: none;
+}
+
+.ribbon span {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* Form */
+
+.form {
+  background-color: #f4f7f8;
+  border-radius: 8px;
+  box-shadow: 0 6px 0 rgb(0, 0, 0, 0.2);
+}
+
+fieldset {
+  margin-top: 32px;
+  background-color: #ffffff;
+  padding: 28px;
+  border-radius: 10px;
+}
+
+.form-control {
+  display: inline-block;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 16px 20px;
+  border: 1px solid #dadada;
+  outline: 0;
+  color: #272727;
+  font-weight: 700;
+  margin-bottom: 22px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form-control:focus {
+  border-color: #272727;
+}
+
+
+button {
+  color: #ffffff;
+  background-color: #37CC8A;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  padding: 16px 24px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 3px 1px #15c778;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+ .form p {
+  color: #a2a1a1;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.form a {
+  text-decoration: none;
+  color: #FF7978;
+  font-weight: 700;
+  font-size: 10px;
+}
