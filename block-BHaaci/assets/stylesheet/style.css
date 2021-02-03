@@ -77,18 +77,21 @@ body {
   flex: 0 1 45%;
 }
 
-/* Trial */
-
-.trial {
-  padding: 100px 0;
-}
-
 h1 {
   font-size: 44px;
   color: #ffffff;
   font-weight: 700;
   line-height: 1;
   margin-bottom: 40px;
+}
+
+/* Main */
+
+main {
+  background: url(../media/bg-intro-desktop.png) center center no-repeat, linear-gradient(rgba(255, 121, 120, 1), rgba(234, 114, 115, 1));
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .trial p {
@@ -98,13 +101,20 @@ h1 {
 
 .ribbon {
   padding: 12px 32px;
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
   background-color: #5D54A3;
   font-size: 14px;
   font-weight: 600;
   color: #B3AED8;
   border-radius: 8px;
-  box-shadow: 1px 6px 2px rgb(132 126 126);
+  box-shadow: 0 6px 0 rgb(0, 0, 0, 0.2);
   text-align: center;
+}
+
+.ribbon a {
+  text-decoration: none;
 }
 
 .ribbon span {
@@ -118,7 +128,7 @@ h1 {
 .form {
   background-color: #f4f7f8;
   border-radius: 8px;
-  box-shadow: 1px 6px 2px rgb(132 126 126);
+  box-shadow: 0 6px 0 rgb(0, 0, 0, 0.2);
 }
 
 fieldset {
@@ -129,7 +139,7 @@ fieldset {
 }
 
 .form-control {
-  display: block;
+  display: inline-block;
   width: 100%;
   background-color: #ffffff;
   padding: 16px 20px;
@@ -157,8 +167,9 @@ button {
   padding: 16px 24px;
   border: 0;
   border-radius: 10px;
-  box-shadow: 1px 3px 1px #15c778;
+  box-shadow: 0 3px 1px #15c778;
   width: 100%;
+  letter-spacing: 1px;
 }
 
  .form p {
